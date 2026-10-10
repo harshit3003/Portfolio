@@ -8,6 +8,7 @@
   [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
   [![Three.js](https://img.shields.io/badge/Three.js-3D-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
   [![GSAP](https://img.shields.io/badge/GSAP-Animations-88CE02?style=for-the-badge&logo=greensock)](https://greensock.com/gsap/)
+  [![**Live Application URL**][https://portfolio-harshit-ec30.vercel.app/](https://portfolio-harshit-ec30.vercel.app/)
 
   <p align="center">
     <strong>A high-performance, immersive 3D developer portfolio featuring scroll-driven avatar animations, interactive Three.js workspace, and multilingual support.</strong>
