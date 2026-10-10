@@ -132,6 +132,7 @@ npm run start
 ## 📬 Connect with Me
 
 - **Developer**: Harshit Gupta
+- **Live Application URL**: [https://portfolio-harshit-ec30.vercel.app/](https://portfolio-harshit-ec30.vercel.app/)
 - **GitHub**: [@harshit3003](https://github.com/harshit3003)
 - **Role**: Software Developer | Computer Science (AIML) Student
 
