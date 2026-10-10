@@ -15,7 +15,7 @@ export const projects = [
     },
     {
         id: 2,
-        title: 'Stock Market Fundamentals Dashboard',
+        title: 'Stock Market Dashboard',
         subtitle: 'Financial Fundamentals & Market Metrics Visualizer',
         description: 'Comprehensive quantitative financial analysis dashboard built with Python, React.js, and MySQL. Features revenue trend tracking, net margin distributions, liquidity current ratios, correlation matrix heatmaps, and company drill-down metrics across 440+ companies.',
         tech: ['Python', 'React.js', 'Vite', 'MySQL'],

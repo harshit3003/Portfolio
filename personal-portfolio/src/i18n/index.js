@@ -2,11 +2,11 @@ import { en } from './en';
 import { fr } from './fr';
 import { ar } from './ar';
 
-export const locales = { en, fr, ar };
+export const locales = { en, fr: en, ar: en };
 export const localeList = [
     { code: 'en', name: 'English', flag: '/flags/en.svg' },
-    { code: 'fr', name: 'Français', flag: '/flags/fr.svg' },
-    { code: 'ar', name: 'العربية', flag: '/flags/ar.svg' },
+    // { code: 'fr', name: 'Français', flag: '/flags/fr.svg' },
+    // { code: 'ar', name: 'العربية', flag: '/flags/ar.svg' },
 ];
 
 /**

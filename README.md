@@ -2,6 +2,24 @@
 
 <div align="center">
 
+  <a href="https://portfolio-git-main-harshit-ec30.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+  <a href="https://linkedin.com/in/harshit-gupta-ba76052a6" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://leetcode.com/u/harshit_3003/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
+  </a>
+  <a href="https://github.com/harshit3003" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-24292e?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="mailto:guptaharshit00006@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+
+  <br/><br/>
+
   [![Next.js](https://img.shields.io/badge/Next.js-15.5-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
   [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
   [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
@@ -14,8 +32,7 @@
     <strong>A high-performance, immersive 3D developer portfolio featuring scroll-driven avatar animations, interactive Three.js workspace, and multilingual support.</strong>
   </p>
 
-  <p align="center">
-    <a href="https://portfolio-harshit-ec30.vercel.app/">Live Demo</a> •
+    <a href="https://portfolio-harshit-ec30.vercel.app/" target="_blank"><strong>🌐 Live Demo</strong></a> •
     <a href="https://github.com/harshit3003/Portfolio">View Repository</a> •
     <a href="#-featured-projects">Featured Projects</a> •
     <a href="#-tech-stack">Tech Stack</a> •
@@ -118,6 +135,7 @@ Portfolio/
 
 3. **Start the local development server:**
    ```bash
+   
    npm run dev
    ```
 
@@ -133,14 +151,17 @@ npm run start
 ---
 
 ## 📬 Connect with Me
-
 - **Developer**: Harshit Gupta
-- **Live Application URL**: [https://portfolio-harshit-ec30.vercel.app/](https://portfolio-harshit-ec30.vercel.app/)
-- **GitHub**: [@harshit3003](https://github.com/harshit3003)
 - **Role**: Software Developer | Computer Science (AIML) Student
+- **🌐 Live Portfolio**: [https://portfolio-harshit-ec30.vercel.app/](https://portfolio-harshit-ec30.vercel.app/)
+- **💼 LinkedIn**: [linkedin.com/in/harshit-gupta-ba76052a6](https://linkedin.com/in/harshit-gupta-ba76052a6)
+- **💡 LeetCode**: [@harshit_3003](https://leetcode.com/u/harshit_3003/)
+- **🐙 GitHub**: [@harshit3003](https://github.com/harshit3003)
+- **📫 Email**: [guptaharshit00006@gmail.com](mailto:guptaharshit00006@gmail.com)
 
 ---
 
 <div align="center">
   <sub>Built with ❤️ using React, Next.js, and Three.js. © 2026 Harshit Gupta.</sub>
 </div>
+
