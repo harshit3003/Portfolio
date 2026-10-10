@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <a href="https://portfolio-git-main-harshit-ec30.vercel.app/" target="_blank">
+  <a href="https://portfolio-harshit-ec30.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Live%20Demo-Visit%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
   </a>
   <a href="https://linkedin.com/in/harshit-gupta-ba76052a6" target="_blank">
@@ -26,18 +26,17 @@
   [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
   [![Three.js](https://img.shields.io/badge/Three.js-3D-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
   [![GSAP](https://img.shields.io/badge/GSAP-Animations-88CE02?style=for-the-badge&logo=greensock)](https://greensock.com/gsap/)
-  
 
   <p align="center">
     <strong>A high-performance, immersive 3D developer portfolio featuring scroll-driven avatar animations, interactive Three.js workspace, and multilingual support.</strong>
   </p>
 
+  <p align="center">
     <a href="https://portfolio-harshit-ec30.vercel.app/" target="_blank"><strong>🌐 Live Demo</strong></a> •
     <a href="https://github.com/harshit3003/Portfolio">View Repository</a> •
     <a href="#-featured-projects">Featured Projects</a> •
     <a href="#-tech-stack">Tech Stack</a> •
     <a href="#-getting-started">Getting Started</a>
-    
   </p>
 
 </div>
@@ -47,8 +46,7 @@
 ## 🌟 Highlights & Key Features
 
 - 🎭 **Scroll-Driven Avatar Transitions**: Frame-perfect GSAP ScrollTrigger transitions syncing 3D character movements from idle to interactive poses.
-- 💻 **Interactive 3D Desk (Three.js)**: Custom interactive 3D workspace model with interactive hover detection (Laptop, Monitor, Coffee, Trophy) and dynamic orbital controls.
-- 🌐 **Multilingual Experience (i18n)**: Instant localized switching across **English**, **French (Français)**, and **Arabic (العربية)** with automatic RTL (Right-to-Left) layout adapting.
+- 💻 **Interactive 3D Desk (Three.js)**: Custom interactive 3D workspace model with hover detection (Laptop, Monitor, Coffee, Trophy) and dynamic orbital controls.
 - 📊 **Bento Grid Skills Dashboard**: Modern Bento UI presenting programming proficiencies, frontend/backend engineering capabilities, and data structures problem-solving stats.
 - 🎞️ **Horizontal Parallax Project Showcase**: Pinned fullscreen horizontal carousel featuring smooth multi-layer parallax scrolling.
 - 🎨 **Adaptive Theme Engine**: Seamless Dark / Light mode toggling powered by styled-components theme context.
@@ -74,7 +72,7 @@
 
 ## 💼 Featured Projects
 
-### 1. 📈 Stock Market Fundamentals Dashboard
+### 1. 📈 Stock Market Dashboard
 > **FinTech / Quantitative Analytics** | *Python, React.js, Vite, MySQL*
 - Quantitative financial fundamentals and stock market analytics visualizer.
 - Features multi-year revenue trends, net margin distributions, liquidity current ratio modeling, correlation matrix heatmaps, and company drill-down analysis across **440+ listed companies**.
@@ -92,7 +90,7 @@
 Portfolio/
 ├── personal-portfolio/
 │   ├── public/
-│   │   ├── avatar/            # Frame sequences (idle, scroll, action, hover)
+│   │   ├── avatar/            # Frame sequences (idle, scroll, action)
 │   │   ├── models/            # 3D assets & GLB models (laptop, desk items)
 │   │   ├── projects/          # High-resolution project screenshots & demos
 │   │   └── videos/            # Ambient videos & animations
@@ -105,7 +103,7 @@ Portfolio/
 │   │   │   └── Preloader.js
 │   │   ├── context/           # ThemeContext, LanguageContext (i18n)
 │   │   ├── data/              # Projects, Skills, and Testimonials data
-│   │   ├── i18n/              # en.js, fr.js, ar.js translations
+│   │   ├── i18n/              # Translation dictionaries & language configuration
 │   │   └── styles/            # GlobalStyles & Theme configurations
 │   ├── package.json
 │   └── next.config.mjs
@@ -135,7 +133,6 @@ Portfolio/
 
 3. **Start the local development server:**
    ```bash
-   
    npm run dev
    ```
 
@@ -164,4 +161,3 @@ npm run start
 <div align="center">
   <sub>Built with ❤️ using React, Next.js, and Three.js. © 2026 Harshit Gupta.</sub>
 </div>
-
