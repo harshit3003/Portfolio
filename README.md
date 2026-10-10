@@ -15,11 +15,12 @@
   </p>
 
   <p align="center">
+    <a href="https://portfolio-harshit-ec30.vercel.app/">Live Demo</a> •
     <a href="https://github.com/harshit3003/Portfolio">View Repository</a> •
     <a href="#-featured-projects">Featured Projects</a> •
     <a href="#-tech-stack">Tech Stack</a> •
     <a href="#-getting-started">Getting Started</a>
-    <a href="[#-getting-started](https://portfolio-harshit-ec30.vercel.app/")">Live Demo</a>
+    
   </p>
 
 </div>
