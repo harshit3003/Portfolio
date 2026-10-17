@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <a href="https://portfolio-harshit-ec30.vercel.app/" target="_blank">
+  <a href="https://portfolio-chi-peach-50.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Live%20Demo-Visit%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
   </a>
   <a href="https://linkedin.com/in/harshit-gupta-ba76052a6" target="_blank">
@@ -32,7 +32,7 @@
   </p>
 
   <p align="center">
-    <a href="https://portfolio-harshit-ec30.vercel.app/" target="_blank"><strong>🌐 Live Demo</strong></a> •
+    <a href="https://portfolio-chi-peach-50.vercel.app/" target="_blank"><strong>🌐 Live Demo</strong></a> •
     <a href="https://github.com/harshit3003/Portfolio">View Repository</a> •
     <a href="#-featured-projects">Featured Projects</a> •
     <a href="#-tech-stack">Tech Stack</a> •
@@ -150,7 +150,7 @@ npm run start
 ## 📬 Connect with Me
 - **Developer**: Harshit Gupta
 - **Role**: Software Developer | Computer Science (AIML) Student
-- **🌐 Live Portfolio**: [https://portfolio-harshit-ec30.vercel.app/](https://portfolio-harshit-ec30.vercel.app/)
+- **🌐 Live Portfolio**: [https://portfolio-chi-peach-50.vercel.app/](https://portfolio-chi-peach-50.vercel.app/)
 - **💼 LinkedIn**: [linkedin.com/in/harshit-gupta-ba76052a6](https://linkedin.com/in/harshit-gupta-ba76052a6)
 - **💡 LeetCode**: [@harshit_3003](https://leetcode.com/u/harshit_3003/)
 - **🐙 GitHub**: [@harshit3003](https://github.com/harshit3003)
