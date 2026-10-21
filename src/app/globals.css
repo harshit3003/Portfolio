@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (next-themes sets `class="dark"` on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ───────────────────────── Design tokens ─────────────────────────
+   Light is the :root default; .dark overrides. Colours are stored as
+   space-separated RGB so Tailwind opacity modifiers (bg-surface/60) work. */
+:root {
+  --bg: 245 241 233; /* warm paper */
+  --surface: 252 250 245;
+  --surface-2: 236 231 220;
+  --fg: 28 25 23; /* warm ink */
+  --muted: 99 92 84; /* AA on --bg */
+  --border: 28 25 23;
+  --border-alpha: 0.1;
+  --accent-a: 194 65 12; /* ember orange, AA on paper */
+  --on-accent: 255 255 255; /* text colour placed on accent fills */
+  --accent-b: 146 100 10; /* deep brass, AA on paper */
+  --glow: 194 65 12;
+  --sh-card: 0 1px 2px rgb(28 25 23 / 0.05), 0 12px 32px -12px rgb(28 25 23 / 0.16);
+  --r-card: 22px;
+  --grain-opacity: 0.05;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dark {
+  --bg: 12 11 10; /* warm ink-black */
+  --surface: 22 20 18;
+  --surface-2: 31 28 25;
+  --fg: 244 239 230; /* warm cream */
+  --muted: 163 156 145; /* AA on --bg */
+  --border: 255 255 255;
+  --border-alpha: 0.09;
+  --accent-a: 255 107 61; /* ember orange */
+  --on-accent: 18 14 11;
+  --accent-b: 232 193 112; /* soft brass */
+  --glow: 255 107 61;
+  --sh-card: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 24px 48px -24px rgb(0 0 0 / 0.8);
+  --grain-opacity: 0.07;
+}
+
+@theme inline {
+  --color-bg: rgb(var(--bg));
+  --color-surface: rgb(var(--surface));
+  --color-surface-2: rgb(var(--surface-2));
+  --color-fg: rgb(var(--fg));
+  --color-muted: rgb(var(--muted));
+  --color-accent-a: rgb(var(--accent-a));
+  --color-accent-b: rgb(var(--accent-b));
+  --color-on-accent: rgb(var(--on-accent));
+
+  --font-sans: var(--f-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--f-space), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--f-jb), ui-monospace, SFMono-Regular, monospace;
+
+  --radius-card: var(--r-card);
+  --shadow-card: var(--sh-card);
+  --ease-signature: var(--ease);
+}
+
+/* ───────────────────────── Base ───────────────────────── */
+html {
+  scroll-behavior: auto; /* Lenis handles smoothing */
+  -webkit-text-size-adjust: 100%;
+}
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  font-family: var(--f-inter), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+::selection {
+  background: rgb(var(--accent-a) / 0.3);
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--accent-b));
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* ───────────────────────── Utilities ───────────────────────── */
+@utility text-gradient {
+  background-image: linear-gradient(100deg, rgb(var(--accent-a)), rgb(var(--accent-b)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-accent-gradient {
+  background-image: linear-gradient(100deg, rgb(var(--accent-a)), rgb(var(--accent-b)));
+}
+
+/* Soft glass card with a 1px gradient border drawn via a masked pseudo-element. */
+@utility glass {
+  position: relative;
+  background: rgb(var(--surface) / 0.6);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+  border-radius: var(--r-card);
+  box-shadow: var(--sh-card);
+  isolation: isolate;
+}
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    145deg,
+    rgb(var(--border) / calc(var(--border-alpha) * 2.6)),
+    rgb(var(--border) / var(--border-alpha)) 40%,
+    rgb(var(--accent-a) / 0.25)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Fine film grain over the whole page for depth. */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.5  0 0 0 0 0.5  0 0 0 0 0.5  0 0 0 0.9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  mix-blend-mode: overlay;
+}
+
+/* Subtle architectural grid used behind hero. */
+.grid-lines {
+  background-image:
+    linear-gradient(rgb(var(--border) / 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--border) / 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+}
+
+/* Blinking caret */
+@keyframes caret {
+  50% {
+    opacity: 0;
+  }
+}
+.caret {
+  display: inline-block;
+  width: 0.55ch;
+  height: 1.05em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: rgb(var(--accent-b));
+  animation: caret 1.05s steps(1) infinite;
+}
+
+/* Infinite marquee (CSS-driven so it costs no JS; pauses on hover). */
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.marquee-track {
+  animation: marquee var(--marquee-duration, 40s) linear infinite;
+  animation-direction: var(--marquee-direction, normal);
+  will-change: transform;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Hide scrollbar visuals on code card */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* Reduced motion: strip CSS animation too (Framer handled via MotionConfig). */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  .caret {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom cursor only for fine pointers; native cursor stays elsewhere. */
+@media (hover: hover) and (pointer: fine) {
+  body.has-custom-cursor,
+  body.has-custom-cursor a,
+  body.has-custom-cursor button {
+    cursor: none;
+  }
+}
