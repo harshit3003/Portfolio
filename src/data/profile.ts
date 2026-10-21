@@ -15,7 +15,7 @@ export const profile = {
   degree: "B.Tech Computer Science & Engineering (AIML)",
   location: "Ghaziabad, India",
   email: "guptaharshit00006@gmail.com",
-  siteUrl: "https://harshitgupta.dev", // TODO: replace with your deployed domain
+  siteUrl: "https://harshitinfo.vercel.app",
   headline: ["I", "build", "full-stack", "products", "and", "love", "solving", "problems."],
   roles: ["Software Developer", "Full-Stack Developer", "Problem Solver", "AIML Student"],
   intro:
